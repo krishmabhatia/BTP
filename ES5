@@ -1,0 +1,14 @@
+#Password=<< Existing password/certificate removed on export >>
+#
+#Mon Aug 02 06:30:04 UTC 2021
+Description=ES5 Demo Service
+Type=HTTP
+HTML5.DynamicDestination=true
+Authentication=BasicAuthentication
+WebIDEUsage=odata_abap,dev_abap
+Name=ES5
+WebIDEEnabled=true
+ProxyType=Internet
+URL=https\://sapes5.sapdevcenter.com/sap/opu/odata/IWBEP/GWSAMPLE_BASIC
+User=i328923
+WebIDESystem=gateway
