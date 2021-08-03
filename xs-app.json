@@ -1,0 +1,32 @@
+{
+    "welcomeFile":"/index.html",
+    "authenticationMethod": "route",
+    "routes":[
+        {
+      "source": "^/sap/opu/odata/(.*)$",
+      "target": "/sap/opu/odata/$1",
+      "destination": "ES5",
+      "authenticationType": "xsuaa",
+      "csrfProtection": false
+        },
+        {
+            "path":"/resources",
+            "target":{
+                "type":"service",
+                "name":"sapui5",
+                "entryPath":"/resources"
+            },
+            "description": "SAPUI5 Resources"
+        },
+        {
+            "path":"/test-resources",
+            "target":{
+                "type":"service",
+                "name":"sapui5",
+                "entryPath":"/test-resources"
+            },
+            "description": "SAPUI5 Test Resources"
+
+        }
+    ]
+}
